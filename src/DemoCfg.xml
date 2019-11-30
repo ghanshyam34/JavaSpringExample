@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : DemoCfg.xml
+    Created on : August 31, 2012, 11:52 PM
+    Author     : Administrator
+    Description:
+        Purpose of the document follows.
+-->  <!--democfg.xml
+DOCTYPE beans PUBLIC  "-//SPRING//DTD BEAN//EN"
+"http://www.springframework.org/dtd/spring-beans.dtd"-->
+
+<!DOCTYPE beans PUBLIC '-//SPRING//DTD BEAN 2.0//EN' 'www.abc.com'>
+<beans>
+    <bean id="dt" class="java.util.Date"/>
+   <bean id="db" class="DemoBean" init-method="myInit" destroy-method="myDestroy">
+   <property name="name"><value>GSPK</value></property>
+   <property name="age"><value>68</value></property>
+   <property name="d" ref="dt"/>
+  </bean>
+</beans>
+
